@@ -11,12 +11,7 @@ import ensurePermissionMiddleware from "../middlewares/ensurePermission.middlewa
 const userRoutes = Router();
 
 userRoutes.post("/signup", createUserController);
-userRoutes.get(
-  "/user/:userId",
-  ensureAuthMiddleware,
-  ensurePermissionMiddleware,
-  retrieveUserController
-);
+userRoutes.get("/user", ensureAuthMiddleware, retrieveUserController);
 userRoutes.patch(
   "/user/:userId",
   ensureAuthMiddleware,

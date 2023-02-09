@@ -13,7 +13,7 @@ const createUserController = async (req: Request, res: Response) => {
 };
 
 const retrieveUserController = async (req: Request, res: Response) => {
-  const { userId } = req.params;
+  const userId = req.user.id;
   const user = await retrieveUserService(userId);
   return res.status(200).json(instanceToPlain(user));
 };
