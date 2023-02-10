@@ -1,6 +1,6 @@
 # ConnectCircle - API
 
-O ConnectCircle auxilia o usuário a manter uma lista de contatos de forma simples e eficiente. Esta é a API, o back-end do projeto. O front-end do projeto encontra-se neste outro repositório:
+O ConnectCircle auxilia o usuário a manter uma lista de contatos de forma simples e eficiente. Esta é a API, o back-end do projeto. O front-end do projeto encontra-se neste outro repositório: https://github.com/vitorlbrasil/circle-connect-front-end
 
 ## Como rodar a API:
 
