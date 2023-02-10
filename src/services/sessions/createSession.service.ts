@@ -15,7 +15,7 @@ const createSessionService = async ({
     email,
   });
 
-  if (!user) {
+  if (!user || !user.isActive) {
     throw new AppError("Invalid e-mail or password!", 400);
   }
 

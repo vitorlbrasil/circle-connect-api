@@ -7,6 +7,7 @@ import sessionsRoutes from "./routes/sessions.routes";
 import contactRoutes from "./routes/contact.routes";
 
 const app = express();
+
 app.use(express.json());
 app.use(userRoutes);
 app.use(sessionsRoutes);

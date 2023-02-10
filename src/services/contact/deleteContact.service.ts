@@ -10,12 +10,7 @@ const deleteContactService = async (
 
   await retrieveContactService(userId, contactId);
 
-  await contactRepository.update(
-    { id: contactId },
-    {
-      isActive: false,
-    }
-  );
+  await contactRepository.delete({ id: contactId });
 };
 
 export default deleteContactService;
